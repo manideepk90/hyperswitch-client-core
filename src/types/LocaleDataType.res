@@ -71,6 +71,7 @@ type localeStrings = {
   addPaymentMethodLabel: string,
   walletDisclaimer: string,
   deletePaymentMethod?: string,
+  enterValidIban : string,
 }
 let defaultLocale = {
   locale: "en",
@@ -145,4 +146,5 @@ let defaultLocale = {
   addPaymentMethodLabel: "Add new payment method",
   walletDisclaimer: "Wallet details will be saved upon selection",
   deletePaymentMethod: "Delete",
+  enterValidIban: "Please enter valid Iban",
 }
