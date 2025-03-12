@@ -41,6 +41,11 @@ let make = () => {
         : <PaymentSheet setConfirmButtonDataRef />
     | (None, _, _) => <PaymentSheet setConfirmButtonDataRef />
     }}
+    <ReactNative.View>
+      <ReactNative.Text>
+        {React.string("HyperOta - Parent Payment Sheet")}
+      </ReactNative.Text>
+    </ReactNative.View>
     <GlobalConfirmButton confirmButtonDataRef />
     <Space height=15. />
   </FullScreenSheetWrapper>
