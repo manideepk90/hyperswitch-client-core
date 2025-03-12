@@ -43,7 +43,7 @@ let make = () => {
     }}
     <ReactNative.View>
       <ReactNative.Text>
-        {React.string("HyperOta - v1.0.0")}
+        {React.string("HyperOta - v1.0.0 - 12th March 2025")}
       </ReactNative.Text>
     </ReactNative.View>
     <GlobalConfirmButton confirmButtonDataRef />
