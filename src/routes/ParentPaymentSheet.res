@@ -43,7 +43,7 @@ let make = () => {
     }}
     <ReactNative.View>
       <ReactNative.Text>
-        {React.string("HyperOta - Parent Payment Sheet")}
+        {React.string("HyperOta - v1.0.0")}
       </ReactNative.Text>
     </ReactNative.View>
     <GlobalConfirmButton confirmButtonDataRef />
