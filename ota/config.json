@@ -7,9 +7,11 @@
   },
   "package": {
     "name": "sdk",
-    "version": "v1.0.0",
+    "version": "1-v1.0.0",
     "properties": {
-      "manifest": {},
+      "manifest": {
+        "client-core" : "1.0.1"
+      },
       "manifest_hash": {}
     },
     "index": "",
