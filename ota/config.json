@@ -9,9 +9,7 @@
     "name": "sdk",
     "version": "1-v1.0.0",
     "properties": {
-      "manifest": {
-        "client-core" : "1.0.1"
-      },
+      "manifest": {},
       "manifest_hash": {}
     },
     "index": "",
