@@ -18,6 +18,7 @@ let make = () => {
   let (paymentScreenType, _) = React.useContext(PaymentScreenContext.paymentScreenTypeContext)
   let (nativeProp, _) = React.useContext(NativePropContext.nativePropContext)
   let (allApiData, _) = React.useContext(AllApiDataContext.allApiDataContext)
+  let packageVersion = LoggerUtils.sdkVersionRef.contents
   let (confirmButtonDataRef, setConfirmButtonDataRef) = React.useState(_ => React.null)
   let setConfirmButtonDataRef = React.useCallback1(confirmButtonDataRef => {
     setConfirmButtonDataRef(_ => confirmButtonDataRef)
@@ -41,11 +42,16 @@ let make = () => {
         : <PaymentSheet setConfirmButtonDataRef />
     | (None, _, _) => <PaymentSheet setConfirmButtonDataRef />
     }}
-    <ReactNative.View>
+    {if nativeProp.configuration.isTestMode {
       <ReactNative.Text>
-        {React.string("HyperOta - v1.0.0 - 12th March 2025")}
+        {switch packageVersion {
+        | PACKAGE_JSON_LOADED(version) => React.string(version)
+        | _ => React.string("Loading...")
+        }}
       </ReactNative.Text>
-    </ReactNative.View>
+    } else {
+      React.null
+    }}
     <GlobalConfirmButton confirmButtonDataRef />
     <Space height=15. />
   </FullScreenSheetWrapper>
