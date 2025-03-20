@@ -132,11 +132,7 @@ let make = (
   }
 exception MyError(string)
 
-let myFunction = () => {
-  raise(MyError("Something specific went wrong!"))
-}
   let handlePress = _ => {
-    myFunction()
     isConfirmButtonValid
       ? {
           setLoading(ProcessingPayments(None))
