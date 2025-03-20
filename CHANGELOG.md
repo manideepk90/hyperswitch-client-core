@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/manideepk90/hyperswitch-client-core/compare/v1.0.0...v1.0.1) (2025-03-20)
+
+
+### Bug Fixes
+
+* button-fix-card ([8f65658](https://github.com/manideepk90/hyperswitch-client-core/commit/8f65658994f0125085e85c722bfea37ab7602e93))
+
 # 1.0.0 (2025-03-20)
 
 
