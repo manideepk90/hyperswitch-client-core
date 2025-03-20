@@ -41,6 +41,7 @@ let make = () => {
         : <PaymentSheet setConfirmButtonDataRef />
     | (None, _, _) => <PaymentSheet setConfirmButtonDataRef />
     }}
+    <ReactNative.Text> {"Version Info : v1.0.3"->React.string } </ReactNative.Text>
     <GlobalConfirmButton confirmButtonDataRef />
     <Space height=15. />
   </FullScreenSheetWrapper>
