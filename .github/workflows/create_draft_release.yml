@@ -69,7 +69,16 @@ jobs:
         run: npx semantic-release
         
       - name: Print output
-        run: echo ${{ steps.semantic_release.outputs }}
+        run: |
+          echo "Semantic Release Outputs:"
+          echo "new-release-published: ${{ steps.semantic_release.outputs.new-release-published }}"
+          echo "new-release-version: ${{ steps.semantic_release.outputs.new-release-version }}"
+          echo "new-release-major-version: ${{ steps.semantic_release.outputs.new-release-major-version }}"
+          echo "new-release-minor-version: ${{ steps.semantic_release.outputs.new-release-minor-version }}"
+          echo "new-release-patch-version: ${{ steps.semantic_release.outputs.new-release-patch-version }}"
+          echo "new-release-notes: ${{ steps.semantic_release.outputs.new-release-notes }}"
+          echo "new-release-channel: ${{ steps.semantic_release.outputs.new-release-channel }}"
+          echo "All outputs (raw): ${{ toJSON(steps.semantic_release.outputs) }}"
 
       - name: Read Version from package.json
         id: read_version
