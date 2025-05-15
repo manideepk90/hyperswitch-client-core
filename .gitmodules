@@ -1,10 +1,10 @@
 [submodule "ios"]
 	path = ios
-	url = git@github.com:juspay/hyperswitch-sdk-ios.git
+	url = git@github.com:manideepk90/hyperswitch-sdk-ios.git
 	branch = main
 [submodule "android"]
 	path = android
-	url = git@github.com:juspay/hyperswitch-sdk-android.git
+	url = git@github.com:manideepk90/hyperswitch-sdk-android.git
 	branch = main
 [submodule "shared-code"]
 	path = shared-code
