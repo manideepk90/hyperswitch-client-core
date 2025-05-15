@@ -29,28 +29,8 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.AUTORELEASE_PAT || github.token }}
 
-      - name: Checkout Android Repository
-        uses: actions/checkout@v4
-        with:
-          repository: manideepk90/hyperswitch-sdk-android
-          ref: main
-          path: android
-          token: ${{ secrets.AUTORELEASE_PAT || github.token }}
-
-      - name: Checkout IOS Repo
-        uses: actions/checkout@v4
-        with:
-          repository: manideepk90/hyperswitch-sdk-ios
-          ref: main
-          path: ios
-          token: ${{ secrets.AUTORELEASE_PAT || github.token }}
-
-      - name: Checkout Shared Code Repo
-        uses: actions/checkout@v4
-        with:
-          repository: juspay/hyperswitch-sdk-utils
-          ref: main
-          path: shared-code
+      - name: Git submodule init
+        run: git submodule update --init --recursive
 
       - name: Setup Node.js & Yarn
         uses: actions/setup-node@v4
