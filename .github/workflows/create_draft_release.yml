@@ -67,6 +67,9 @@ jobs:
       - name: Run Semantic Release
         id: semantic_release
         run: npx semantic-release
+        
+      - name: Print output
+        run: echo ${{ steps.semantic_release.outputs }}
 
       - name: Read Version from package.json
         id: read_version
