@@ -2,6 +2,8 @@
 
 Explanation of Configuration Keys
 
+commit message for automated pipeline must start with `chore(sdk-update):`
+
 - `enable_ota_updates` → Enables or disables OTA updates. When `false`, only Release Config (RC) is updated. `(Optional)` `(default - true)`
 
 - `target_platform` → Specifies the platform for the update (`android` or `ios`).
