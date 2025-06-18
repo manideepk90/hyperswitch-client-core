@@ -5,6 +5,7 @@
     "release_tag_version": "v1.4.3",
     "release_env": "sandbox",
     "release_config_timeout_ms" : 2000,
-    "package_timeout_ms" : 200
+    "package_timeout_ms" : 2000,
+    "enable_ota_updates" : false
   }
 }
