@@ -55,7 +55,7 @@ let make = () => {
         }}
         <GlobalConfirmButton confirmButtonDataRef />
         <Space height=15. />
-        <ReactNative.Text>{"v1.4.3"->React.string}</ReactNative.Text>
+        <ReactNative.Text>{"v0.2.7"->React.string}</ReactNative.Text>
       </React.Fragment>
     }}
   </FullScreenSheetWrapper>

@@ -2,7 +2,9 @@
   "config": {
     "target_platform": "ios",
     "target_version": "0.2.7",
-    "release_tag_version": "v1.4.3",
-    "release_env": "sandbox"
+    "release_tag_version": "v1.4.4",
+    "release_env": "sandbox",
+    "package_timeout_ms" : 500,
+    "release_config_timeout_ms" : 700
   }
 }
