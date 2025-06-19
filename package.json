@@ -1,6 +1,6 @@
 {
   "name": "hyperswitch",
-  "version": "1.5.0",
+  "version": "1.4.4",
   "private": true,
   "scripts": {
     "start": "react-native start --reset-cache",
@@ -15,7 +15,7 @@
     "android": "react-native run-android --appIdSuffix demoapp --main-activity .demoapp.MainActivity && yarn run adb",
     "web:next": "cd reactNativeWeb && next",
     "bundle:android": "react-native bundle  --reset-cache --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/hyperswitch.bundle",
-    "bundle:ios": "react-native bundle --reset-cache --platform ios --dev false --entry-file index.js --bundle-output ios/hyperswitchSDK/Core/Resources/hyperswitch.bundle",
+    "bundle:ios": "react-native bundle --reset-cache --platform ios --dev false --entry-file index.js --bundle-output hyperswitch.bundle",
     "build:web": "rm -rf reactNativeWeb/dist/ && webpack --mode=production --config reactNativeWeb/webpack.config.js",
     "build:lib": "android/build-lib.sh",
     "clean": "rm -rf node_modules && rm -rf package-lock.json && rm -rf yarn.lock && yarn run clean:gradle && yarn run clean:pod",
