@@ -6,6 +6,7 @@ import {
 } from '../components/modules/Sentry.bs.js';
 
 const NewApp = props => {
+  throw new Error('NewApp is not implemented yet. Please implement it in src/routes/Update.js');
   return (
     <App
       props={props.props}
