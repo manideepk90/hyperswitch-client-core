@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/manideepk90/hyperswitch-client-core/compare/v1.7.2...v1.8.0) (2025-07-15)
+
+
+### Features
+
+* testing semantic-on-mine ([c22be7c](https://github.com/manideepk90/hyperswitch-client-core/commit/c22be7c02477574b4228eb38f4b79ee6dca77a8c))
+
 ## [1.7.2](https://github.com/manideepk90/hyperswitch-client-core/compare/v1.7.1...v1.7.2) (2025-07-15)
 
 
