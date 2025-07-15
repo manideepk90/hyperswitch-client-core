@@ -1,3 +1,11 @@
+## [1.7.2](https://github.com/manideepk90/hyperswitch-client-core/compare/v1.7.1...v1.7.2) (2025-07-15)
+
+
+### Bug Fixes
+
+* changed to manideep ([6b88a0f](https://github.com/manideepk90/hyperswitch-client-core/commit/6b88a0f9263adaab6f68ef13c9c778fc55e87e62))
+* changed to my repo ([1494c3e](https://github.com/manideepk90/hyperswitch-client-core/commit/1494c3e6842cf9ef371a7a99393e894a275c0b34))
+
 ## [1.7.1](https://github.com/juspay/hyperswitch-client-core/compare/v1.7.0...v1.7.1) (2025-07-11)
 
 
