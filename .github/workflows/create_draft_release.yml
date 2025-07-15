@@ -60,7 +60,7 @@ jobs:
         if: env.RELEASE_PERFORMED == 'true'
         uses: actions/checkout@v4
         with:
-          repository: juspay/hyperswitch-sdk-android
+          repository: manideepk90/hyperswitch-sdk-android
           ref: main
           path: android
           token: ${{ secrets.AUTORELEASE_PAT || github.token }}
@@ -70,7 +70,7 @@ jobs:
 
         uses: actions/checkout@v4
         with:
-          repository: juspay/hyperswitch-sdk-ios
+          repository: manideepk90/hyperswitch-sdk-ios
           ref: main
           path: ios
           token: ${{ secrets.AUTORELEASE_PAT || github.token }}
