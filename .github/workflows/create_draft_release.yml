@@ -99,6 +99,8 @@ jobs:
           
           # Commit Android bundle
           cd android
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add ./app/src/main/assets/hyperswitch.bundle
           if ! git diff --staged --quiet; then
             git commit -m "chore(release): v${{ env.VERSION }} Android Bundle update [skip ci]"
@@ -108,6 +110,8 @@ jobs:
           
           # Commit iOS bundle
           cd ios
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add ./hyperswitchSDK/Core/Resources/hyperswitch.bundle
           if ! git diff --staged --quiet; then
             git commit -m "chore(release): v${{ env.VERSION }} IOS Bundle update [skip ci]"
